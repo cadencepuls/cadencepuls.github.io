@@ -32,11 +32,27 @@ body {
 }
 
 .name {
-  font-family: 'Archivo', sans-serif;
-  font-weight: 700;
-  font-size: clamp(2rem, 5vw, 2.75rem);
-  letter-spacing: -0.01em;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.5rem, 2.6vw, 1.75rem);
+  letter-spacing: -0.005em;
   margin: 0;
+}
+
+.hero-name {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  font-size: clamp(3.5rem, 11vw, 8rem);
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  margin: 64px 0 24px;
+  text-align: center;
+}
+
+.name .dot {
+  color: var(--ink);
+  font-size: 0.7em;
+  margin-right: 2px;
 }
 
 .site-nav {
@@ -103,11 +119,12 @@ body {
 }
 
 .project-title {
-  font-family: 'Archivo', sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
   margin: 0;
-  letter-spacing: -0.005em;
 }
 
 /* ---------- Footer ---------- */
