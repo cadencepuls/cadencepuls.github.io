@@ -21,6 +21,26 @@
       <a href="#blog">Blog</a>
   </header>
 
+ <!-- ABOUT -->
+    <section class="about-section">
+      <h2 class="about-section-title">Overview</h2>
+      <p> I'm a senior at UC Berkeley majoring in Mechanical Engineering with a minor in History. The world needs sustainability and integrity at the forefront of innovation and I’m passionate about solving the challenging problems needed to get there. With my experience in design, manufacturing, and leadership roles I’m eager to contribute to projects that meaningfully push boundaries.</p>
+    </section>
+
+<div class="spacer">
+  <img src="spacer.png" alt="" class="spacer-img">
+</div>
+
+<script>
+  const img = document.querySelector('.spacer-img');
+  document.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth - 0.5) * 20;
+    const y = (e.clientY / window.innerHeight - 0.5) * 20;
+    img.style.transform = `translate(${x}px, ${y}px)`;
+  });
+</script>
+
+  
   <main>
     <section id="projects" class="project-grid">
 
