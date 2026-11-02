@@ -205,13 +205,29 @@ body {
 }
 
 .project-detail-photo {
+  float: right;
+  width: 35%;                 /* smaller = lower number */
+  margin: 0 0 24px 32px;      /* space between photo and text */
   border: 1.5px solid var(--line);
-  margin-bottom: 32px;
 }
 
 .project-detail-photo img {
   width: 100%;
   display: block;
+}
+
+/* Lets each section sit beside the photo instead of running under it */
+.project-section {
+  display: flow-root;
+}
+
+/* On phones, drop back to a full-width photo above the text */
+@media (max-width: 640px) {
+  .project-detail-photo {
+    float: none;
+    width: 100%;
+    margin: 0 0 24px;
+  }
 }
 
 .project-detail-body {
