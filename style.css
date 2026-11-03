@@ -239,6 +239,90 @@ body {
   margin: 0 0 20px;
 }
 
+/* ---------- Resume Page ---------- */
+
+.resume-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 64px 32px 96px;
+}
+
+.resume-title {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  text-align: center;
+  margin: 0 0 24px;
+}
+
+.resume-intro {
+  max-width: 65ch;
+  margin: 0 auto 56px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Resume on the left, photos on the right */
+.resume-layout {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.resume-doc img {
+  width: 100%;
+  display: block;
+  border: 1.5px solid var(--line);
+}
+
+.resume-download {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 8px 18px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.resume-download:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.resume-embed {
+  width: 100%;
+  height: 1100px;
+}
+
+/* Photo collage: two columns, "wide" ones span both */
+.resume-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.resume-photos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: 1.5px solid var(--line);
+}
+
+.resume-photos .wide {
+  grid-column: 1 / -1;
+}
+
+/* Phones: stack everything */
+@media (max-width: 800px) {
+  .resume-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ---------- Footer ---------- */
 
 .site-footer {
