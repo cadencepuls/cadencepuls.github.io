@@ -287,6 +287,22 @@ body {
   border: 1.5px solid var(--line);
 }
 
+.resume-download {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 8px 18px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.resume-download:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
 .resume-photos {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
